@@ -8,7 +8,7 @@ This is a Rails-based versioned REST API built using ActiveRecord. It currently 
 To use this application clone the following repository:
 
 ```
-$ git clone https://github.com/brickstar/rails_engine
+$ git clone https://github.com/wehttamclan/rails_engine.git
 ```
 
 From the application directory, run the following commands to install and update all necessary gem dependencies:
