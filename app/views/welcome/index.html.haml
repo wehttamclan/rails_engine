@@ -1,0 +1,173 @@
+%h1 Welcome to Rails Engine
+
+.customer-endpoints
+  %h3 Customer endpoints
+  %span GET
+  %span=link_to("/api/v1/customers", "/api/v1/customers")
+  %br
+  %span GET
+  %span=link_to("/api/v1/customers/{44}", "/api/v1/customers/44")
+  %br
+  %span GET
+  %span=link_to("/api/v1/customers/{44}/invoices", "/api/v1/customers/44/invoices")
+  %br
+  %span GET
+  %span=link_to("/api/v1/customers/{44}/transactions", "/api/v1/customers/44/transactions")
+  %br
+  %span GET
+  %span=link_to("/api/v1/customers/{44}/favorite_merchant", "/api/v1/customers/44/favorite_merchant")
+  %br
+  %span GET
+  %span=link_to("/api/v1/customers/find", "/api/v1/customers/find")
+  %br
+  %span GET
+  %span=link_to("/api/v1/customers/find_all", "/api/v1/customers/find_all")
+  %br
+  %span GET
+  %span=link_to("/api/v1/customers/random", "/api/v1/customers/random")
+
+.merchant-endpoints
+  %h3 Merchant endpoints
+  %span GET
+  %span=link_to("/api/v1/merchants", "/api/v1/merchants")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/{23}", "/api/v1/merchants/23")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/{23}/items", "/api/v1/merchants/23/items")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/{23}/invoices", "/api/v1/merchants/23/invoices")
+  -# %br
+  -# %span GET
+  -# %span=link_to("/api/v1/merchants/{23}/revenue", "/api/v1/merchants/23/revenue")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/{23}/favorite_customer", "/api/v1/merchants/23/favorite_customer")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/find", "/api/v1/merchants/find")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/find_all", "/api/v1/merchants/find_all")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/random", "/api/v1/merchants/random")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/most_revenue", "/api/v1/merchants/most_revenue")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/most_items", "/api/v1/merchants/most_items")
+  %br
+  %span GET
+  %span=link_to("/api/v1/merchants/revenue", "/api/v1/merchants/revenue")
+
+.item-endpoints
+  %h3 Item endpoints
+  %span GET
+  %span=link_to("/api/v1/items", "/api/v1/items")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/{55}", "/api/v1/items/55")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/{55}/merchant", "/api/v1/items/55/merchant")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/{55}/invoice_items", "/api/v1/items/55/invoice_items")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/{55}/best_day", "/api/v1/items/55/best_day")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/find", "/api/v1/items/find")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/find_all", "/api/v1/items/find_all")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/random", "/api/v1/items/random")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/most_revenue", "/api/v1/items/most_revenue")
+  %br
+  %span GET
+  %span=link_to("/api/v1/items/most_items", "/api/v1/items/most_items")
+
+.invoice-item-endpoints
+  %h3 Invoice Item endpoints
+  %span GET
+  %span=link_to("/api/v1/invoice_items", "/api/v1/invoice_items")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoice_items/{12}", "/api/v1/invoice_items/12")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoice_items/{12}/item", "/api/v1/invoice_items/12/item")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoice_items/{12}/invoice", "/api/v1/invoice_items/12/invoice")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoice_items/find", "/api/v1/invoice_items/find")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoice_items/find_all", "/api/v1/invoice_items/find_all")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoice_items/random", "/api/v1/invoice_items/random")
+
+.invoice-endpoints
+  %h3 Invoice endpoints
+  %span GET
+  %span=link_to("/api/v1/invoices", "/api/v1/invoices")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/{34}", "/api/v1/invoices/34")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/{34}/transactions", "/api/v1/invoices/34/transactions")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/{34}/invoice_items", "/api/v1/invoices/34/invoice_items")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/{34}/items", "/api/v1/invoices/34/items")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/{34}/customer", "/api/v1/invoices/34/customer")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/{34}/merchant", "/api/v1/invoices/34/merchant")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/find", "/api/v1/invoices/find")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/find_all", "/api/v1/invoices/find_all")
+  %br
+  %span GET
+  %span=link_to("/api/v1/invoices/random", "/api/v1/invoices/random")
+
+.transaction-endpoints
+  %h3 Transactions endpoints
+  %span GET
+  %span=link_to("/api/v1/transactions", "/api/v1/transactions")
+  %br
+  %span GET
+  %span=link_to("/api/v1/transactions/{123}", "/api/v1/transactions/123")
+  %br
+  %span GET
+  %span=link_to("/api/v1/transactions/{123}/invoice", "/api/v1/transactions/123/invoice")
+  %br
+  %span GET
+  %span=link_to("/api/v1/transactions/find", "/api/v1/transactions/find")
+  %br
+  %span GET
+  %span=link_to("/api/v1/transactions/find_all", "/api/v1/transactions/find_all")
+  %br
+  %span GET
+  %span=link_to("/api/v1/transactions/random", "/api/v1/transactions/random")
+
