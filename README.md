@@ -2,6 +2,8 @@
 
 This is a Rails-based versioned REST API built using ActiveRecord. It currently only supports GET requests that allow users to consume data from the SalesEngine data schema. All output is currently in JSON format.
 
+Check it out in production on Heroku [https://rails-engine-asdf.herokuapp.com/](https://rails-engine-asdf.herokuapp.com/).
+
 ##
 
 ### Setup
